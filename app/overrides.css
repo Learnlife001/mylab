@@ -51,6 +51,115 @@
   background: linear-gradient(90deg, rgba(181, 28, 21, .72) 0%, rgba(201, 35, 27, .38) 54%, rgba(41, 10, 9, .18));
 }
 
+/* Let each chapter borrow the colour of the one that follows it. The slow
+   background movement keeps the handoffs feeling atmospheric instead of like
+   straight, fixed bands of colour. */
+.hero {
+  background:
+    radial-gradient(circle at 82% 24%, rgba(255, 108, 48, .34), transparent 23%),
+    linear-gradient(158deg, var(--lime) 0%, var(--lime) 63%, #3a4c1b 80%, #11110f 100%);
+  background-size: 135% 135%;
+  animation: colour-flow 18s ease-in-out infinite alternate;
+}
+
+.work-intro {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 82%, rgba(120, 151, 93, .28), transparent 27%),
+    linear-gradient(160deg, #11110f 0%, #11110f 57%, #172025 79%, #1c2225 100%);
+  background-size: 145% 145%;
+  animation: colour-flow 21s ease-in-out infinite alternate-reverse;
+}
+
+.project-honeypot {
+  background:
+    radial-gradient(circle at 76% 84%, rgba(191, 216, 171, .18), transparent 28%),
+    linear-gradient(160deg, #1c2225 0%, #1c2225 61%, #6b7471 82%, #e9e1d6 100%);
+  background-size: 145% 145%;
+  animation: colour-flow 20s ease-in-out infinite alternate;
+}
+
+.project-api {
+  background:
+    radial-gradient(circle at 12% 86%, rgba(239, 125, 88, .22), transparent 30%),
+    linear-gradient(160deg, #e9e1d6 0%, #e9e1d6 61%, #e4a398 83%, #ce291f 100%);
+  background-size: 145% 145%;
+  animation: colour-flow 22s ease-in-out infinite alternate-reverse;
+}
+
+.project-sukuna {
+  background:
+    radial-gradient(circle at 78% 25%, rgba(255, 174, 91, .18), transparent 25%),
+    linear-gradient(160deg, #ce291f 0%, #ce291f 66%, #7b201e 85%, #16110f 100%);
+  background-size: 145% 145%;
+  animation: colour-flow 19s ease-in-out infinite alternate;
+}
+
+@keyframes colour-flow {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .work-intro,
+  .project-honeypot,
+  .project-api,
+  .project-sukuna { animation: none; }
+}
+
+/* Stronger, full-height blends: every section now visibly contains both its
+   own colour and the colour it is handing over to. */
+.hero {
+  background:
+    radial-gradient(circle at 76% 28%, rgba(255, 126, 50, .54), transparent 25%),
+    linear-gradient(142deg, #c8ff52 0%, #a6dd42 20%, #5d842f 48%, #24321d 70%, #11110f 100%);
+}
+
+.work-intro {
+  background:
+    radial-gradient(circle at 76% 78%, rgba(235, 232, 219, .28), transparent 29%),
+    linear-gradient(142deg, #11110f 0%, #171b1a 24%, #394543 50%, #7e8985 75%, #e9e1d6 100%);
+}
+
+.project-honeypot {
+  background:
+    radial-gradient(circle at 72% 78%, rgba(241, 232, 220, .55), transparent 30%),
+    linear-gradient(142deg, #1c2225 0%, #26393c 25%, #526a69 48%, #a8b3ad 74%, #e9e1d6 100%);
+}
+
+.project-api {
+  background:
+    radial-gradient(circle at 15% 76%, rgba(255, 222, 191, .4), transparent 28%),
+    linear-gradient(142deg, #e9e1d6 0%, #ecd8cf 24%, #e6aa9d 49%, #db695d 73%, #ce291f 100%);
+}
+
+.project-sukuna {
+  background:
+    radial-gradient(circle at 74% 26%, rgba(255, 169, 85, .32), transparent 26%),
+    linear-gradient(142deg, #ce291f 0%, #bb3328 27%, #832821 55%, #411b19 78%, #16110f 100%);
+}
+
+.project-honeypot:after {
+  background:
+    linear-gradient(142deg, rgba(15, 22, 25, .72) 0%, rgba(24, 40, 42, .58) 42%, rgba(201, 210, 202, .30) 100%),
+    linear-gradient(90deg, rgba(15, 22, 25, .28), transparent 72%);
+}
+
+.project-api:after {
+  background:
+    linear-gradient(142deg, rgba(245, 238, 228, .66) 0%, rgba(239, 188, 176, .43) 48%, rgba(202, 41, 31, .35) 100%),
+    linear-gradient(90deg, rgba(247, 241, 233, .20), transparent 72%);
+}
+
+.project-sukuna:after {
+  background:
+    linear-gradient(142deg, rgba(206, 41, 31, .68) 0%, rgba(125, 35, 30, .48) 52%, rgba(19, 15, 13, .42) 100%),
+    linear-gradient(90deg, rgba(206, 41, 31, .18), transparent 72%);
+}
+
 @media (max-width: 700px) {
   .social-links { flex-wrap: wrap; }
 }
+
