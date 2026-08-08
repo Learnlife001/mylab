@@ -159,6 +159,38 @@
     linear-gradient(90deg, rgba(206, 41, 31, .18), transparent 72%);
 }
 
+.project-cyberrecon {
+  background: linear-gradient(142deg, #07151b 0%, #0d3031 44%, #59a472 100%);
+  color: #f2f8ef;
+}
+
+.project-cyberrecon:after {
+  background:
+    linear-gradient(142deg, rgba(3, 16, 22, .64) 0%, rgba(8, 46, 45, .42) 48%, rgba(110, 184, 126, .26) 100%),
+    linear-gradient(90deg, rgba(2, 11, 16, .24), transparent 74%);
+}
+
+.project-cyberrecon .visual:before { border-color: rgba(140, 235, 167, .42); }
+
+.recon-frame {
+  width: min(100%, 30rem);
+  padding: 1.2rem;
+  border: 1px solid rgba(155, 246, 183, .58);
+  background: rgba(3, 17, 22, .78);
+  box-shadow: 0 1.6rem 4rem rgba(0, 10, 12, .32);
+  font-family: var(--font-mono), monospace;
+}
+
+.recon-bar, .recon-line { display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: .66rem; letter-spacing: .12em; }
+.recon-bar b, .recon-line b { color: #9ff5ac; }
+.recon-target { margin: 2rem 0 1.2rem; color: rgba(242, 248, 239, .66); font-size: .78rem; }
+.recon-target strong { color: #f2f8ef; }
+.recon-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem; }
+.recon-grid div { min-height: 4.6rem; padding: .8rem; border: 1px solid rgba(155, 246, 183, .22); background: rgba(120, 224, 153, .07); }
+.recon-grid small { display: block; color: rgba(242, 248, 239, .54); font-size: .6rem; letter-spacing: .1em; }
+.recon-grid b { display: block; margin-top: .55rem; font-size: .8rem; font-weight: 500; }
+.recon-line { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(155, 246, 183, .24); color: rgba(242, 248, 239, .65); }
+
 @media (max-width: 700px) {
   .social-links { flex-wrap: wrap; }
 }

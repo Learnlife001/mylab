@@ -35,6 +35,18 @@ const projects = [
     style: "sukuna",
     video: "/videos/sukuna.mp4",
   },
+  {
+    number: "04",
+    title: "CyberRecon\nPlatform",
+    eyebrow: "Security intelligence",
+    description:
+      "A defensive reconnaissance workspace for mapping domains, reviewing ports, DNS, WHOIS, subdomains, and technology findings from one focused dashboard.",
+    stack: ["Next.js", "FastAPI", "Supabase", "Nmap"],
+    live: "https://cgreglab.space/",
+    github: "https://github.com/Learnlife001/cyberrecon",
+    style: "cyberrecon",
+    video: "/videos/cyberrecon.mp4",
+  },
 ];
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
@@ -106,6 +118,7 @@ export default function Home() {
                 {project.style === "honeypot" && <HoneypotVisual />}
                 {project.style === "api" && <ApiVisual />}
                 {project.style === "sukuna" && <SukunaVisual />}
+                {project.style === "cyberrecon" && <CyberReconVisual />}
               </div>
             </div>
           </section>
@@ -126,4 +139,8 @@ function ApiVisual() {
 
 function SukunaVisual() {
   return <div className="sukuna-frame"><div className="seal">宿<br /><small>RYOMEN</small></div><div className="slash slash-one" /><div className="slash slash-two" /><p>THE KING<br />OF CURSES</p><span>呪術廻戦</span></div>;
+}
+
+function CyberReconVisual() {
+  return <div className="recon-frame"><div className="recon-bar"><span>CYBERRECON</span><b>LIVE SCAN</b></div><div className="recon-target">target: <strong>cgreglab.space</strong></div><div className="recon-grid"><div><small>DNS</small><b>12 records</b></div><div><small>PORTS</small><b>3 exposed</b></div><div><small>WHOIS</small><b>Resolved</b></div><div><small>SUBDOMAINS</small><b>08 found</b></div></div><div className="recon-line"><span>Recon status</span><b>COMPLETE</b></div></div>;
 }
