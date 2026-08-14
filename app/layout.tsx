@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 2 seconds
-Output:
 import type { Metadata } from "next";
 import "./globals.css";
 import "./overrides.css";
