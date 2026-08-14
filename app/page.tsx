@@ -47,10 +47,21 @@ const projects = [
     style: "cyberrecon",
     video: "/videos/cyberrecon.mp4",
   },
+  {
+    number: "05",
+    title: "AI Builder\nCapstone",
+    eyebrow: "AI Accelerator Â· 2026",
+    description:
+      "A complete AI-builder portfolio bringing together full-stack products, workflow automation, AI content, cybersecurity systems, and the POD 7 community in one focused final project.",
+    stack: ["AI Products", "Automation", "Full Stack", "AI Content", "Cybersecurity"],
+    live: "https://cj.greglabs.nl/",
+    github: "https://github.com/Learnlife001/ai-bootcamp",
+    style: "capstone",
+  },
 ];
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
-  return <span aria-hidden="true" className={diagonal ? "arrow diagonal" : "arrow"}>→</span>;
+  return <span aria-hidden="true" className={diagonal ? "arrow diagonal" : "arrow"}>â†’</span>;
 }
 
 export default function Home() {
@@ -59,13 +70,17 @@ export default function Home() {
       <nav className="nav" aria-label="Main navigation">
         <a href="#top" className="brand">GREG<span>LABS</span></a>
         <div className="nav-links">
-          <a href="#work">Selected work</a>
-          <a href="#social">Profiles <Arrow /></a>
+          <div className="nav-work-mark">
+            <a href="#work">Selected work</a>
+            <div className="nav-video-mark" aria-label="GregLabs motion mark">
+              <img src="/nav-mark.png" alt="" />
+            </div>
+          </div>
         </div>
       </nav>
 
       <section id="top" className="hero">
-        <p className="eyebrow reveal">Independent builder · Germany</p>
+        <p className="eyebrow reveal">Independent builder Â· Germany</p>
         <div className="hero-title reveal">
           <h1>I build things<br />for the <em>web.</em></h1>
           <div className="orb" aria-hidden="true"><span /></div>
@@ -78,12 +93,12 @@ export default function Home() {
               <a className="social-link" href="https://x.com/cjlearnlife" target="_blank" rel="noreferrer" aria-label="Visit X"><img src="https://cdn.simpleicons.org/x/11110f" alt="" /></a>
               <a className="social-link" href="https://www.tiktok.com/@allgreggames" target="_blank" rel="noreferrer" aria-label="Visit TikTok"><img src="https://cdn.simpleicons.org/tiktok/11110f" alt="" /></a>
               <a className="social-link" href="https://github.com/Learnlife001" target="_blank" rel="noreferrer" aria-label="Visit GitHub"><img src="https://cdn.simpleicons.org/github/11110f" alt="" /></a>
-              <a className="social-link email-link" href="mailto:info@greglabs.nl" aria-label="Email GregLabs"><span aria-hidden="true">✉</span></a>
+              <a className="social-link email-link" href="mailto:info@greglabs.nl" aria-label="Email GregLabs"><span aria-hidden="true">âœ‰</span></a>
             </div>
           </div>
           <a className="text-link" href="#work">Explore the work <Arrow /></a>
         </div>
-        <div className="scroll-cue" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></div>
+        <div className="scroll-cue" aria-hidden="true">SCROLL TO EXPLORE <span>â†“</span></div>
       </section>
 
       <section id="work" className="work-intro">
@@ -95,11 +110,11 @@ export default function Home() {
       <div className="projects">
         {projects.map((project) => (
           <section className={`project project-${project.style}`} key={project.title}>
-            <div className="project-video" aria-hidden="true">
+            {project.video && <div className="project-video" aria-hidden="true">
               <video autoPlay loop muted playsInline preload="metadata">
                 <source src={project.video} type="video/mp4" />
               </video>
-            </div>
+            </div>}
             <div className="project-topline">
               <span>{project.number}</span>
               <span>{project.eyebrow}</span>
@@ -111,7 +126,7 @@ export default function Home() {
                 <div className="tags">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
                 <div className="project-actions">
                   <a href={project.live} target="_blank" rel="noreferrer">View live <Arrow diagonal /></a>
-                  <a href={project.github} target="_blank" rel="noreferrer">View source <Arrow diagonal /></a>
+                  {project.github && <a href={project.github} target="_blank" rel="noreferrer">View source <Arrow diagonal /></a>}
                 </div>
               </div>
               <div className="visual" aria-label={`${project.title.replace("\n", " ")} project preview`}>
@@ -119,6 +134,7 @@ export default function Home() {
                 {project.style === "api" && <ApiVisual />}
                 {project.style === "sukuna" && <SukunaVisual />}
                 {project.style === "cyberrecon" && <CyberReconVisual />}
+                {project.style === "capstone" && <CapstoneVisual />}
               </div>
             </div>
           </section>
@@ -138,9 +154,14 @@ function ApiVisual() {
 }
 
 function SukunaVisual() {
-  return <div className="sukuna-frame"><div className="seal">宿<br /><small>RYOMEN</small></div><div className="slash slash-one" /><div className="slash slash-two" /><p>THE KING<br />OF CURSES</p><span>呪術廻戦</span></div>;
+  return <div className="sukuna-frame"><div className="seal">å®¿<br /><small>RYOMEN</small></div><div className="slash slash-one" /><div className="slash slash-two" /><p>THE KING<br />OF CURSES</p><span>å‘ªè¡“å»»æˆ¦</span></div>;
 }
 
 function CyberReconVisual() {
   return <div className="recon-frame"><div className="recon-bar"><span>CYBERRECON</span><b>LIVE SCAN</b></div><div className="recon-target">target: <strong>cgreglab.space</strong></div><div className="recon-grid"><div><small>DNS</small><b>12 records</b></div><div><small>PORTS</small><b>3 exposed</b></div><div><small>WHOIS</small><b>Resolved</b></div><div><small>SUBDOMAINS</small><b>08 found</b></div></div><div className="recon-line"><span>Recon status</span><b>COMPLETE</b></div></div>;
 }
+
+function CapstoneVisual() {
+  return <div className="capstone-frame"><div className="capstone-heading"><span>CHIGOZIE G. OKUMA</span><b>AI BUILDER</b></div><div className="capstone-grid"><div><small>01</small><b>BUILD</b><span>Web &amp; apps</span></div><div><small>02</small><b>AUTOMATE</b><span>Smart workflows</span></div><div><small>03</small><b>CREATE</b><span>AI content</span></div><div><small>04</small><b>SECURE</b><span>Threat systems</span></div></div><div className="capstone-footer"><span>AI ACCELERATOR Â· FINAL PROJECT</span><b>2026</b></div></div>;
+}
+
