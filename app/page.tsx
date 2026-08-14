@@ -1,3 +1,6 @@
+Exit code: 0
+Wall time: 2.1 seconds
+Output:
 const projects = [
   {
     number: "01",
@@ -57,6 +60,7 @@ const projects = [
     live: "https://cj.greglabs.nl/",
     github: "https://github.com/Learnlife001/ai-bootcamp",
     style: "capstone",
+    video: "/videos/ai-capstone-final.mp4",
   },
 ];
 
