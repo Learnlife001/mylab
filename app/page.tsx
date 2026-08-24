@@ -75,7 +75,7 @@ export default function Home() {
       <nav className="social-dock" aria-label="Social profiles">
         <a className="social-link" href="https://www.facebook.com/CJLEARNLIFE" target="_blank" rel="noreferrer" aria-label="Visit Facebook"><img src="https://cdn.simpleicons.org/facebook/f3f0ea" alt="" /></a>
         <a className="social-link" href="https://x.com/cjlearnlife" target="_blank" rel="noreferrer" aria-label="Visit X"><img src="https://cdn.simpleicons.org/x/f3f0ea" alt="" /></a>
-        <a className="social-link" href="https://www.tiktok.com/@allgreggames" target="_blank" rel="noreferrer" aria-label="Visit TikTok"><img src="https://cdn.simpleicons.org/tiktok/f3f0ea" alt="" /></a>
+        <a className="social-link" href="https://www.tiktok.com/@buildsbygreg?_r=1&_t=ZG-999tLSmatTU" target="_blank" rel="noreferrer" aria-label="Visit TikTok"><img src="https://cdn.simpleicons.org/tiktok/f3f0ea" alt="" /></a>
         <a className="social-link" href="https://github.com/Learnlife001" target="_blank" rel="noreferrer" aria-label="Visit GitHub"><img src="https://cdn.simpleicons.org/github/f3f0ea" alt="" /></a>
         <a className="social-link email-link" href="mailto:info@greglabs.nl" aria-label="Email GregLabs"><img src="https://cdn.simpleicons.org/gmail/f3f0ea" alt="" /></a>
       </nav>
