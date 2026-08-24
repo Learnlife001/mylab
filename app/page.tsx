@@ -70,14 +70,6 @@ export default function Home() {
     <main>
       <nav className="nav" aria-label="Main navigation">
         <a href="#top" className="brand">GREG<span>LABS</span></a>
-        <div className="nav-links">
-          <div className="nav-work-mark">
-            <a href="#work">Selected work</a>
-            <div className="nav-video-mark" aria-label="GregLabs motion mark">
-              <img src="/nav-mark.png" alt="" />
-            </div>
-          </div>
-        </div>
       </nav>
 
       <nav className="social-dock" aria-label="Social profiles">
@@ -89,19 +81,11 @@ export default function Home() {
       </nav>
 
       <section id="top" className="hero">
-        <p className="eyebrow reveal">Independent builder Â· Germany</p>
+        <p className="eyebrow reveal">Independent builder in Germany</p>
         <div className="hero-title reveal">
           <h1>I build things<br />for the <em>web.</em></h1>
           <div className="orb" aria-hidden="true"><span /></div>
         </div>
-        <div className="hero-bottom reveal">
-          <div className="hero-intro">
-            <p>I explore ideas through secure systems, useful APIs, and memorable digital experiences.</p>
-
-          </div>
-          <a className="text-link" href="#work">Explore the work <Arrow /></a>
-        </div>
-        <div className="scroll-cue" aria-hidden="true">SCROLL TO EXPLORE <span>â†“</span></div>
       </section>
 
       <section id="work" className="work-intro">
