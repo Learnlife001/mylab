@@ -6,7 +6,7 @@ It is a single scrolling project hub. Every finished project gets its own full s
 
 ## Featured projects
 
-- **Cowrie Honeypot SOC Platform**: Security operations dashboard for observing honeypot activity and hostile SSH traffic. [Live dashboard](https://35-208-243-179.sslip.io/) · [GitHub](https://github.com/Learnlife001/Honeypot)
+- **Cowrie Honeypot SOC Platform**: Security operations dashboard for observing honeypot activity and hostile SSH traffic. [Live dashboard](https://honeypot.greglabs.nl/) · [GitHub](https://github.com/Learnlife001/Honeypot)
 - **SecureTask Cloud API**: Task management API with authentication, validation, database migrations, and interactive documentation. [Live documentation](https://securetask-api-stys.onrender.com/docs) · [GitHub](https://github.com/Learnlife001/SecureTaskAPI)
 - **Ryomen Sukuna Archive**: Interactive, story led anime archive experience. [Live site](https://ryomen-sukuna-archive.vercel.app) · [GitHub](https://github.com/Learnlife001/ryomen-sukuna-archive)
 - **CyberRecon Platform**: Defensive reconnaissance workspace for domains, ports, DNS, WHOIS, subdomains, and technology findings. [Live site](https://cgreglab.space/) · [GitHub](https://github.com/Learnlife001/cyberrecon)
