@@ -80,6 +80,14 @@ export default function Home() {
         </div>
       </nav>
 
+      <nav className="social-dock" aria-label="Social profiles">
+        <a className="social-link" href="https://www.facebook.com/CJLEARNLIFE" target="_blank" rel="noreferrer" aria-label="Visit Facebook"><img src="https://cdn.simpleicons.org/facebook/f3f0ea" alt="" /></a>
+        <a className="social-link" href="https://x.com/cjlearnlife" target="_blank" rel="noreferrer" aria-label="Visit X"><img src="https://cdn.simpleicons.org/x/f3f0ea" alt="" /></a>
+        <a className="social-link" href="https://www.tiktok.com/@allgreggames" target="_blank" rel="noreferrer" aria-label="Visit TikTok"><img src="https://cdn.simpleicons.org/tiktok/f3f0ea" alt="" /></a>
+        <a className="social-link" href="https://github.com/Learnlife001" target="_blank" rel="noreferrer" aria-label="Visit GitHub"><img src="https://cdn.simpleicons.org/github/f3f0ea" alt="" /></a>
+        <a className="social-link email-link" href="mailto:info@greglabs.nl" aria-label="Email GregLabs"><img src="https://cdn.simpleicons.org/gmail/f3f0ea" alt="" /></a>
+      </nav>
+
       <section id="top" className="hero">
         <p className="eyebrow reveal">Independent builder Â· Germany</p>
         <div className="hero-title reveal">
@@ -89,13 +97,7 @@ export default function Home() {
         <div className="hero-bottom reveal">
           <div className="hero-intro">
             <p>I explore ideas through secure systems, useful APIs, and memorable digital experiences.</p>
-            <div className="social-links" id="social" aria-label="Social profiles">
-              <a className="social-link" href="https://www.facebook.com/CJLEARNLIFE" target="_blank" rel="noreferrer" aria-label="Visit Facebook"><img src="https://cdn.simpleicons.org/facebook/11110f" alt="" /></a>
-              <a className="social-link" href="https://x.com/cjlearnlife" target="_blank" rel="noreferrer" aria-label="Visit X"><img src="https://cdn.simpleicons.org/x/11110f" alt="" /></a>
-              <a className="social-link" href="https://www.tiktok.com/@allgreggames" target="_blank" rel="noreferrer" aria-label="Visit TikTok"><img src="https://cdn.simpleicons.org/tiktok/11110f" alt="" /></a>
-              <a className="social-link" href="https://github.com/Learnlife001" target="_blank" rel="noreferrer" aria-label="Visit GitHub"><img src="https://cdn.simpleicons.org/github/11110f" alt="" /></a>
-              <a className="social-link email-link" href="mailto:info@greglabs.nl" aria-label="Email GregLabs"><span aria-hidden="true">âœ‰</span></a>
-            </div>
+
           </div>
           <a className="text-link" href="#work">Explore the work <Arrow /></a>
         </div>
