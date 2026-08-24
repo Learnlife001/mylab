@@ -231,3 +231,67 @@
   .social-links { flex-wrap: wrap; }
 }
 
+
+
+/* Persistent social dock: it stays available while each work chapter scrolls behind it. */
+.social-dock {
+  position: fixed;
+  z-index: 30;
+  left: 50%;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px;
+  border: 1px solid rgba(243, 240, 234, .34);
+  border-radius: 999px;
+  background: rgba(11, 12, 11, .76);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, .26), inset 0 1px 0 rgba(255, 255, 255, .12);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  transform: translateX(-50%);
+}
+
+.social-dock .social-link {
+  width: 45px;
+  height: 45px;
+  flex: 0 0 45px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #f3f0ea;
+}
+
+.social-dock .social-link img {
+  width: 18px;
+  height: 18px;
+  opacity: .94;
+  transition: filter .2s ease, transform .2s ease;
+}
+
+.social-dock .social-link:hover,
+.social-dock .social-link:focus-visible {
+  background: var(--lime);
+  color: var(--ink);
+  outline: none;
+}
+
+.social-dock .social-link:hover img,
+.social-dock .social-link:focus-visible img {
+  filter: brightness(0);
+  transform: scale(1.08);
+}
+
+@media (max-width: 700px) {
+  .social-dock {
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    gap: 2px;
+    padding: 5px;
+  }
+
+  .social-dock .social-link {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+}
