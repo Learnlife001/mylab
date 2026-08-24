@@ -18,7 +18,7 @@ const projects = [
     description:
       "A production-minded task-management API with authentication, validation, database migrations, and interactive API documentation.",
     stack: ["FastAPI", "PostgreSQL", "Docker", "Render"],
-    live: "https://securetask-api-stys.onrender.com/docs",
+    live: "https://sta.greglabs.nl/docs",
     github: "https://github.com/Learnlife001/SecureTaskAPI",
     style: "api",
     video: "/videos/cloud-api.mp4",
