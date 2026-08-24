@@ -6,7 +6,7 @@ const projects = [
     description:
       "A security operations dashboard for observing honeypot activity, tracking hostile traffic, and turning raw events into a readable monitoring view.",
     stack: ["Python", "Cowrie", "Docker", "SQLite"],
-    live: "https://35-208-243-179.sslip.io/",
+    live: "https://honeypot.greglabs.nl/",
     github: "https://github.com/Learnlife001/Honeypot",
     style: "honeypot",
     video: "/videos/honeypot.mp4",
