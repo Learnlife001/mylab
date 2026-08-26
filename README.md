@@ -41,3 +41,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Deployment
 
 The repository is connected to Vercel. Updates to the main branch publish to [greglabs.nl](https://greglabs.nl).
+
+## License
+
+This project is available under the [MIT License](LICENSE).
